@@ -1,0 +1,12 @@
+{
+  "name": "telepromter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+}
+}
