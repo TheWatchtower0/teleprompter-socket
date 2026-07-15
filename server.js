@@ -13,7 +13,7 @@ const SPECIAL_BROADCAST_ACTIONS = [
   // Add more special actions here as needed
 ];
 
-const TRIAL_DURATION = process.env.TRIAL_DURATION || 1800000;
+const TRIAL_DURATION = process.env.TRIAL_DURATION ? parseInt(process.env.TRIAL_DURATION) : 1800000;
 
 function broadcastTrialStatus(project) {
   const statusMsg = JSON.stringify({
